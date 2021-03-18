@@ -61,7 +61,7 @@ describe('Todos', () => {
     expect(response.body.created_at).toBeTruthy();
   });
 
-  it('should be able to update a todo', async () => {
+  it.only('should be able to update a todo', async () => {
     const userResponse = await request(app)
       .post('/users')
       .send({
